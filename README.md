@@ -59,12 +59,30 @@ CHAIRMAN_MODEL = "google/gemini-3-pro-preview"
 
 ## Running the Application
 
-**Option 1: Use the start script**
+**Option 1: Using Docker (Recommended)**
+
+```bash
+docker-compose up
+```
+
+This will start both the backend and frontend services. Open http://localhost:5173 in your browser.
+
+To run in detached mode:
+```bash
+docker-compose up -d
+```
+
+To stop the services:
+```bash
+docker-compose down
+```
+
+**Option 2: Use the start script**
 ```bash
 ./start.sh
 ```
 
-**Option 2: Run manually**
+**Option 3: Run manually**
 
 Terminal 1 (Backend):
 ```bash
