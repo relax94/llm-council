@@ -6,8 +6,8 @@ WORKDIR /app
 COPY ./requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy backend code
-COPY . .
+# Copy backend code into backend/ subdirectory to preserve package structure
+COPY . ./backend/
 
 # Create data directory
 RUN mkdir -p ./data/conversations
